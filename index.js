@@ -1,5 +1,4 @@
 const express = require('express')
-const Promise = require('bluebird')
 const app = express()
 
 app.get('/', function (req, res) {
