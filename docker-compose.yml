@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  node:
+    build: .
+    user: "node"
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/app
+    expose:
+      - "8081"
+    command: >-
+      bash -c "npm install; npm start;"
+    ports:
+      - "3000:3000"
+
+volumes:
+  node:
