@@ -1,0 +1,22 @@
+<html>
+  <head></head>
+  <body>
+    <h1>Typeracer XD</h1>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io()
+
+      socket.on('connect', function(data) {
+        //socket.emit('join', 'Hello World from client');
+
+      });
+
+      socket.on('ranking', function(data) {
+        console.log(data)
+      });
+
+
+    </script>
+  </body>
+
+</html>
